@@ -1,20 +1,21 @@
 import {
-  Kitchen,
+  Utensils,
   Sofa,
   Laptop,
-  Shower,
+  Droplet,
   Bike,
   Wind,
   BookOpen,
   Home,
   Shirt,
   Palette,
+  ArrowRightIcon
 } from "lucide-react";
 import { Button } from "./ui/button";
 
 const categories = [
   {
-    icon: <Kitchen className="w-8 h-8" />,
+    icon: <Utensils className="w-8 h-8" />,
     name: "Kitchen Essentials",
     description: "Appliances & accessories for your culinary needs",
     items: "15+ items",
@@ -32,7 +33,7 @@ const categories = [
     items: "12+ items",
   },
   {
-    icon: <Shower className="w-8 h-8" />,
+    icon: <Droplet className="w-8 h-8" />,
     name: "Bath & Toiletries",
     description: "Personal care essentials",
     items: "8+ items",
@@ -99,7 +100,7 @@ const Categories = () => {
                 <span className="text-sm font-medium text-mit-red">{category.items}</span>
                 <Button variant="ghost" size="sm" className="text-mit-red hover:text-mit-red/90">
                   Browse
-                  <ArrowRight className="ml-2 h-4 w-4" />
+                  <ArrowRightIcon className="ml-2 h-4 w-4" />
                 </Button>
               </div>
             </div>
